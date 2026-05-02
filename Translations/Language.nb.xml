@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VeraCrypt>
   <localization prog-version="1.26.28">
-    <language langid="nb" name="Norsk Bokmål" en-name="Norwegian (Bokmål)" version="0.1.0" translators="Marius Kjærstad" />
+    <language langid="nb" name="Norsk Bokmål" en-name="Norwegian (Bokmål)" version="02-05-2026" translators="Marius Kjærstad" />
     <font lang="nb" class="normal" size="11" face="default" />
     <font lang="nb" class="bold" size="13" face="Arial" />
     <font lang="nb" class="fixed" size="12" face="Lucida Console" />
@@ -63,7 +63,7 @@
     <entry lang="nb" key="IDC_SHOW_PASSWORD">&amp;Vis passord</entry>
     <entry lang="nb" key="IDC_SHOW_PASSWORD_SINGLE">&amp;Vis passord</entry>
     <entry lang="nb" key="IDC_SHOW_PIM">&amp;Vis PIM</entry>
-    <entry lang="nb" key="IDC_SINGLE_BOOT">Enkel-start</entry>
+    <entry lang="nb" key="IDC_SINGLE_BOOT">Enkeltoppstart</entry>
     <entry lang="nb" key="IDC_STD_VOL">Standard VeraCrypt-volum</entry>
     <entry lang="nb" key="IDC_SYSENC_HIDDEN">Skj&amp;ult</entry>
     <entry lang="nb" key="IDC_SYSENC_NORMAL">Normal</entry>
@@ -97,7 +97,7 @@
     <entry lang="nb" key="IDT_SPEED">Hastighet</entry>
     <entry lang="nb" key="IDT_STATUS">Status</entry>
     <entry lang="nb" key="IDT_SYSENC_KEYS_GEN_INFO">Nøklene, saltet og andre data er generert. Hvis du vil generere nye nøkler, klikk Tilbake og deretter Neste. Ellers, klikk Neste for å fortsette.</entry>
-    <entry lang="nb" key="IDT_SYS_DEVICE">Krypterer partisjonen/disken der Windows er installert. Hvem som helst som vil få tilgang til og bruke systemet, lese og skrive filer, osv., må skrive inn riktig passord hver gang før Windows starter. Kan eventuelt opprette et skjult volum.</entry>
+    <entry lang="nb" key="IDT_SYS_DEVICE">Krypterer partisjonen/disken der Windows er installert. Hvem som helst som vil få tilgang til og bruke systemet, lese og skrive filer, osv., må skrive inn riktig passord hver gang før Windows starter. Kan eventuelt opprette et skjult operativsystem.</entry>
     <entry lang="nb" key="IDT_SYS_PARTITION">Velg dette alternativet for å kryptere partisjonen der det for øyeblikket kjørende Windows-operativsystemet er installert.</entry>
     <entry lang="nb" key="IDT_VOLUME_LABEL">Volumetikett i Windows:</entry>
     <entry lang="nb" key="IDT_WIPE_MODE">Slette modus:</entry>
@@ -1646,7 +1646,7 @@
     <entry lang="nb" key="INSECURE_MODE">[USIKKER MODUS]</entry>
     <entry lang="nb" key="IDC_DISABLE_SCREEN_PROTECTION">Deaktiver beskyttelse mot skjermbilder og skjermopptak</entry>
     <entry lang="nb" key="DISABLE_SCREEN_PROTECTION_WARNING">ADVARSEL: Deaktivering av skjermbeskyttelse reduserer sikkerheten betydelig. Aktiver dette alternativet KUN hvis du har et spesifikt behov for å fange VeraCrypts grensesnitt. Dette kan eksponere sensitiv data for skjermbilderverktøy og skjermopptaksfunksjoner, som for eksempel Windows 11 Recall.</entry>
-    <entry lang="nb" key="MEMORY_COST">Minneforbruk</entry>
+    <entry lang="nb" key="MEMORY_COST">Minnekostnad</entry>
     <entry lang="nb" key="IDT_KDF_ALGO">KDF-algoritme</entry>
     <entry lang="nb" key="IDD_PREFERENCES_TAB_GENERAL">Generelt</entry>
     <entry lang="nb" key="IDD_PREFERENCES_TAB_ACTIONS">Handlinger</entry>
@@ -1669,9 +1669,9 @@
     <entry lang="nb" key="PIM_ARGON2_SMALL_WARNING">Du har valgt en Argon2 PIM-verdi som er mindre enn VeraCrypts standardverdi. Vær oppmerksom på at dersom passordet ditt ikke er sterkt nok, kan dette føre til svakere sikkerhet.\n\nBekrefter du at du bruker et sterkt passord?</entry>
     <entry lang="nb" key="PIM_ARGON2_REQUIRE_LONG_PASSWORD">Passordet må inneholde 20 eller flere tegn for å kunne bruke den angitte Argon2 PIM-en.\nKortere passord kan kun brukes hvis Argon2 PIM er 12 eller større.</entry>
     <entry lang="nb" key="LINUX_PREF_MOUNT_NTFS_WITH_NTFS3">Monter NTFS-volumer med Linux-kjernens ntfs3-driver</entry>
-    <entry lang="nb" key="LINUX_PREF_MOUNT_NTFS_WITH_NTFS3_HELP">Kun for Linux. Når dette er aktivert, undersøker VeraCrypt den dekrypterte virtuelle enheten med blkid -p og monterer oppdagede NTFS-filsystemer med ntfs3 i stedet for standard NTFS-bakgrunnssystem. Hvis NTFS-deteksjonen mislykkes, bruker VeraCrypt vanlig automatisk filsystemvalg. Hvis ntfs3 er utilgjengelig eller blokkert av distribusjonen, kan monteringen mislykkes. Dette valgfrie alternativet kan forhindre at hvile- eller dvalemodus henger seg opp på grunn av frosne FUSE-filsystemer i brukerrom.</entry>
-    <entry lang="en" key="LINUX_EMERGENCY_UNMOUNT_WARNING">Normal unmount of volume {0} failed. This can happen when applications still have files or directories open on the volume, or when the backing device was disconnected and the mount became stale.\n\nIf the device is still connected, choose No, close applications using the volume, and try unmounting again.\n\nIf the device was disconnected or the mount is stale, VeraCrypt can attempt emergency cleanup by lazy-detaching the filesystem and removing or scheduling removal of VeraCrypt kernel objects. Pending writes may have failed, data may be lost, and cleanup may remain pending until applications close open files. Check the filesystem with fsck or the appropriate repair tool before using it again.\n\nContinue?</entry>
-    <entry lang="en" key="LINUX_EMERGENCY_UNMOUNTED">Emergency cleanup for volume {0} has been initiated. If the volume was disconnected, the mount was stale, or there were pending writes, check the filesystem with fsck or the appropriate repair tool before using it again.</entry>
+    <entry lang="nb" key="LINUX_PREF_MOUNT_NTFS_WITH_NTFS3_HELP">Kun for Linux. Når dette er aktivert, undersøker VeraCrypt den dekrypterte virtuelle enheten med blkid -p og monterer oppdagede NTFS-filsystemer med ntfs3 i stedet for standard NTFS-bakgrunnssystem. Hvis NTFS-deteksjonen mislykkes, bruker VeraCrypt vanlig automatisk filsystemvalg. Hvis ntfs3 er utilgjengelig eller blokkert av distribusjonen, kan monteringen mislykkes. Dette valgfrie alternativet kan forhindre at hvile- eller dvalemodus henger seg opp på grunn av fastlåste FUSE-filsystemer i brukermodus.</entry>
+    <entry lang="nb" key="LINUX_EMERGENCY_UNMOUNT_WARNING">Normal avmontering av volumet {0} mislyktes. Dette kan skje når programmer fortsatt har filer eller mapper åpne på volumet, eller når den underliggende enheten ble frakoblet og monteringen ble foreldet.\n\nHvis enheten fortsatt er tilkoblet, velg Nei, lukk programmene som bruker volumet, og prøv å avmontere på nytt.\n\nHvis enheten ble frakoblet eller monteringen er foreldet, kan VeraCrypt forsøke en nødopprydding ved å frakoble filsystemet og fjerne eller planlegge fjerning av VeraCrypts kjerneobjekter. Ventende skrivinger kan ha mislyktes, data kan gå tapt, og oppryddingen kan forbli ventende inntil programmene lukker åpne filer. Kontroller filsystemet med fsck eller et passende reparasjonsverktøy før du bruker det igjen.\n\nFortsette?</entry>
+    <entry lang="nb" key="LINUX_EMERGENCY_UNMOUNTED">Nødopprydding for volumet {0} er igangsatt. Hvis volumet ble frakoblet, monteringen var foreldet, eller det var ventende skrivinger, kontroller filsystemet med fsck eller et passende reparasjonsverktøy før du bruker det igjen.</entry>
   </localization>
   <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="VeraCrypt">
