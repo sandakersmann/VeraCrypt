@@ -10569,8 +10569,6 @@ void TaskBarIconDisplayBalloonTooltip (HWND hwnd, wchar_t *headline, wchar_t *te
 	StringCbCopyW (tnid.szInfoTitle, sizeof(tnid.szInfoTitle), headline);
 	StringCbCopyW (tnid.szInfo, sizeof(tnid.szInfo),text);
 
-	// Display the balloon tooltip quickly twice in a row to avoid the slow and unwanted "fade-in" phase
-	Shell_NotifyIconW (NIM_MODIFY, &tnid);
 	Shell_NotifyIconW (NIM_MODIFY, &tnid);
 }
 
